@@ -1,16 +1,9 @@
-# Advanced Maths Project1
+# Advacned Maths Project
 
-Best Hotel classifier using Transformers
-This project aims to classify if the hotel is best or not using a pre-trained Transformer model from the Hugging Face Transformers library. The model is fine-tuned on a dataset of hotel reivews and ratings for accuracy. The project is implemented in Python using TensorFlow and the Hugging Face Transformers library.
+CNN & Vit Our project is based on image classification of Nike and Adidas using CNN and ViT (Visual transformers) The goal is to classify input images into one of two categories. The CNN model and the Vision Transformer (ViT) model were both trained and evaluated on the same dataset to compare their performance in terms of accuracy and loss.
 
-Dataset:
+For preprocessing we used data generators, we have a CNN architecture consists of several convolutional layers followed by a pooling, dense, flattening layer and a few fully connected layers Model is trained using the adam optimizer sparse categorical crossentropy loss function Hyperparameter tuning is also done for better accuracy
 
-The dataset used for training and evaluation consists of 20k reviews crawled from Tripadvisor, from where  you can explore what makes a great hotel and maybe even use this model in your travels.
+Next we used ViT for better accuracy As we all know transformer-based model is more effective at capturing long-range dependencies in the images so resulting model should have higher accuracy than the previous model. The ViT model uses a transformer architecture that processes the input image using attention mechanisms. Both models were trained using the Adam optimizer with different learning rates and other hyperparameters.
 
-Pre-processing:
-
-The reviews are pre-processed using the transformers library. The reviwes are tokenized and encoded using the DistilBertTokenizer from the Transformers library. The encoded reviews are then padded to a fixed length and converted to TensorFlow Dataset objects.
-
-Model:
-
-The pre-trained DistilBert model from the Hugging Face Transformers library is used as the base model. The model is fine-tuned on the pre-processed dataset using the TFTrainer class from the transformers library.
+We have used pre defined methods of ViT with the help of youtube videos.
